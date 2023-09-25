@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap');
+
+:root {
+  --text-primary: #F8D642;
+	--text-secondary: #BCBCBB;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Cairo', sans-serif;
+}
+body {
+	padding: 40px 0;
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+.logo-container img {
+	width: 400px;
+	height: auto;
+}
+h1 {
+	color: var(--text-primary);
+	font-size: 28px;
+	margin-top: 15px;
+	opacity: .9;
+	padding: 0 15px;
+	text-align: center;
+}
+.content {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	color: var(--text-secondary);
+}
+.locations, .phones {
+	margin-top: 30px;
+	padding: 0 30px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.location, .phone {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+.location img, .phone img {
+	width: 35px;
+	height: auto;
+}
+.location a, .phone a {
+	font-size: 18px;
+}
+.location a:hover, .phone a:hover {
+	color: white;
+}
+.social {
+	margin-top: 50px;
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+	align-items: center;
+}
+.facebook {
+	width: 42px;
+	height: auto;
+}
+.instagram {
+	width: 44px;
+	height: auto;
+}
+.tiktok {
+	width: 38px;
+	height: auto;
+}
+
+@media only screen and (max-width: 500px) {
+	.logo-container img {
+		width: 300px;
+	}
+	h1 {
+		font-size: 22px;
+	}
+	.locations, .phones {
+		padding: 0 15px;
+	}
+	.location a, .phone a {
+		font-size: 16px;
+	}
+	.location img, .phone img {
+		width: 30px;
+		height: auto;
+	}
+	.facebook {
+		width: 38px;
+		height: auto;
+	}
+	.instagram {
+		width: 40px;
+		height: auto;
+	}
+	.tiktok {
+		width: 34px;
+		height: auto;
+	}
+}
+@media only screen and (max-width: 300px) {
+	.logo-container img {
+		width: 250px;
+	}
+}
